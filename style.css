@@ -8,9 +8,10 @@
     font-style: normal;
   
 }
-/* body{
-
-} */
+body{
+    background-color: black;
+    color: beige;
+}
 .left{
     width: 25vw;
     padding: 10px;
@@ -39,4 +40,19 @@
 }
 .heading img{
     width: 30px;
+}
+.library{
+    min-height: 72.5vh;
+    position: relative;
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+}
+.footer a{
+    color: gray;
+    text-decoration: none;
 }
