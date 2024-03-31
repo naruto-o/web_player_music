@@ -7,14 +7,18 @@
 } */
 .left{
     width: 25vw;
-    padding: 30px;
+    padding: 10px;
 }
 .right{
     width: 75vw;
+}
+.home{
+    padding: 10px;
 }
 .home ul li{
         display: flex;
         gap: 15px;
         width: 16px;
         list-style: none;
+        padding: 15px;
 }
