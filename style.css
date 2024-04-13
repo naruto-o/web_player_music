@@ -6,9 +6,18 @@
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-
+    
 }
+body::-webkit-scrollbar {
+    width: 8px; /* Adjust as needed */
+    background-color: black; /* Color of the scrollbar track */
+    margin-right: 8px; /* Thin margin */
+  }
 
+  body::-webkit-scrollbar-thumb {
+    background-color: black; /* Color of the scrollbar thumb */
+    border-radius: 8px; /* Rounded corners */
+  }
 body {
     background-color: black;
     color: beige;
@@ -67,6 +76,7 @@ body {
 
 .right {
     margin: 16px 0;
+    position: relative;
 
 }
 
@@ -106,6 +116,77 @@ body {
     font-weight: 700;
     font-size: small;
 }
-.spotifyplaylist{
+
+.spotifyplaylist {
     padding: 16px;
+}
+
+.cardcontainer {
+    margin: 10px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding: 18px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #252525;
+
+}
+
+.card img {
+    height: 200px;
+    width: 200px;
+}
+
+.playbar {
+    position: fixed;
+    bottom: 0;
+    background-color: #1fdf64;
+    width: 70vw;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.songbutton {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.songlist{
+    height: 400px;
+    overflow:auto;
+    margin-bottom:30px; 
+}
+.songlist::-webkit-scrollbar {
+    width: 8px; /* Adjust as needed */
+    background-color: black; /* Color of the scrollbar track */
+    margin-right: 8px; /* Thin margin */
+  }
+
+  .songlist::-webkit-scrollbar-thumb {
+    background-color: black; /* Color of the scrollbar thumb */
+    border-radius: 8px; /* Rounded corners */
+  }
+.songlist ul {
+    padding: 0 38px;
+}
+.songlist .info{
+    width: 170px;
+}
+.songlist ul li {
+    list-style: none;
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid whitesmoke;
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 6px;
 }
